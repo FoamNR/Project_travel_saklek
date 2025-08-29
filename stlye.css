@@ -1,0 +1,253 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+.nav ul{
+    list-style: none;
+    background-color: rgb(228, 227, 227);
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    box-shadow: 2px 2px 4px 2px rgb(0 0 0 / 10%);
+}
+.nav li{
+    font-size: 1.5em;
+    font-family: 'Pridi', serif;
+    line-height: 40px;
+    text-align: left;
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(92, 91, 91);
+    display: block;
+    padding-left: 15px;
+    border-bottom: 1px solid #888;
+    transition: .3s;
+}
+.nav a:hover{
+    background-color: whitesmoke;
+    color: #000;
+}
+.nav a.active{
+    background-color: #aaa;
+    color: #444;
+    cursor: default;
+}
+.nav li li{
+    font-size: .8em;
+}
+
+/* Style menu for Larger screens */
+
+@media screen and (min-width: 730px){
+    .nav li{
+        width: 180px;
+        border-bottom: none;
+        height: 65px;
+        line-height: 65px;
+        font-size: 1.4em;
+        display: inline-block;
+        margin-right: -4px;
+    }
+    .nav a{
+        border-bottom: none;
+    }
+    .nav > ul > li{
+        text-align: center;
+    }
+    .nav > ul > li > a{
+        padding-left: 0;
+    }
+
+     /* Sum Menu */
+    .nav li ul{
+        position: absolute;
+        display: none;
+        width: inherit;
+    }
+    .nav li:hover ul{
+        display: block;
+    }
+    .nav li ul li{
+        display: block;
+    }
+}
+/********************************************************Section***********************************************************/
+section{
+    width: 100%;
+}
+.text-box{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tn{
+    width: 80%
+}
+.text-i{
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    border-radius: 4px;
+}
+.text-i h1{
+    font-size: 3.6em;
+    letter-spacing: .07em;
+    font-family: 'Chonburi', cursive;
+    transform: skewx(-6deg);
+}
+.text-o{
+    text-align: center;
+    
+}
+.text-o h1{
+    font-size: 3.6em;
+    letter-spacing: .07em;
+    font-family: 'Prompt', serif;
+    transform: skewx(-6deg);
+}
+.hrr{
+    width: 70%;
+    margin: 0 auto;
+}
+.nvt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: #40d3dc;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+.navigation-auto div{
+    border: 2 solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background:#40d3dc;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background:#40d3dc;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background:#40d3dc;
+}
+/*            Footer                 */
+footer{
+    max-width: 100%;
+    background: #222;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+    font-family: 'Prompt', serif;
+}
+.bgf{
+    max-width: 400px;
+    color: rgb(201, 201, 201);
+    padding: 60px;
+    padding-top:0 ;
+}
+@media screen and (max-width: 700px){
+    footer{
+        width: 100%;
+        display: table;
+        justify-content: center;
+    }
+}
+.dit{
+    width: 100%;
+    height: 350px;
+}
+.boxtext{
+    width: 65%;
+    margin: 0 auto;
+   
+}
+.text2 h1{
+    font-size: 2em;
+    font-family: 'Pridi', serif;
+}
+.text2 p{
+    font-size: 1.35em;
+    font-family: 'Pridi', serif;
+    color: #334;
+}
+.text2 li{
+    font-size: 1.2em;
+    font-family: 'Pridi', serif;
+    color: #334;
+}
+.dir{
+    width: 100%;
+    height: 350px;
+}

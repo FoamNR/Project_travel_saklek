@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+.nav ul{
+    list-style: none;
+    background-color: rgb(228, 227, 227);
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    box-shadow: 2px 2px 4px 2px rgb(0 0 0 / 10%);
+}
+.nav li{
+    font-size: 1.5em;
+    font-family: 'Pridi', serif;
+    line-height: 40px;
+    text-align: left;
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(92, 91, 91);
+    display: block;
+    padding-left: 15px;
+    border-bottom: 1px solid #888;
+    transition: .3s;
+}
+.nav a:hover{
+    background-color: whitesmoke;
+    color: #000;
+}
+.nav a.active{
+    background-color: #aaa;
+    color: #444;
+    cursor: default;
+}
+.nav li li{
+    font-size: .8em;
+}
+
+/* Style menu for Larger screens */
+
+@media screen and (min-width: 700px){
+    .nav li{
+        width: 180px;
+        border-bottom: none;
+        height: 65px;
+        line-height: 65px;
+        font-size: 1.4em;
+        display: inline-block;
+        margin-right: -4px;
+    }
+    .nav a{
+        border-bottom: none;
+    }
+    .nav > ul > li{
+        text-align: center;
+    }
+    .nav > ul > li > a{
+        padding-left: 0;
+    }
+
+     /* Sum Menu */
+    .nav li ul{
+        position: absolute;
+        display: none;
+        width: inherit;
+    }
+    .nav li:hover ul{
+        display: block;
+    }
+    .nav li ul li{
+        display: block;
+    }
+}
+section{
+    width: 100%;
+}
+.boxtext{
+    width: 80%;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    
+}
+hr.style1{
+	border-top: 1.3px solid #8c8b8b;
+}
+.text h1{
+    font-size: 2em;
+    font-family: 'Pridi', serif;
+}
+@media screen and (max-width: 700px){
+    .boxtext{
+        width: 100%;
+        text-align: center;
+    }
+}
+/*      topic1        */
+.boxdata{
+    width: 80%;
+    margin: 0 auto;
+}
+.textrt{
+    text-align: center;
+}
+.textrt h1{
+    font-size: 2em;
+    font-family: 'Pridi', serif;
+}
+.photo1{
+    display: flex;
+    justify-content: center;
+}
+.photo1 img{
+   max-width: 720px;
+    box-shadow: 2px 2px 4px 2px rgb(0 0 0 / 30%);
+}
+@media screen and (max-width: 700px){
+    .photo1 img{
+        min-width: 300px;
+    }
+}
+.textp1{
+    margin-top: 40px;
+}
+.textp1 p{
+    font-size: 1.5em;
+    font-family: 'Trirong', serif;
+    color: #666;
+}
+
+/*      topic2        */
+.photograp{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.photograp h1{
+    font-size: 2em;
+    font-family: 'Pridi', serif;
+}
+/***********************************************section ad********************************************************/
+
+hr.style1{
+	border-top: 1.3px solid #8c8b8b;
+}
+.box-ad{
+    max-width: 75%;
+    margin: 0 auto;
+}
+.text-ad{
+    margin-top: 50px;
+}
+.text-ad h1{
+    font-family: 'Prompt', serif;
+    font-size: 1.5em;
+}
+.text-ad p{
+    font-family: 'Prompt', serif;
+    color: #444;
+    font-size: 1em;
+}
+/***********************************************section map********************************************************/
+
+.boxmap{
+    max-width: 75%;
+    margin: 0 auto;
+}
+.text-map{
+    margin-top: 50px;
+}
+.text-map h1{
+    font-family: 'Prompt', serif;
+    font-size: 1.5em;
+}
+.map-box iframe{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+/*            Footer                 */
+footer{
+    max-width: 100%;
+    background: #222;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+    font-family: 'Prompt', serif;
+}
+.bgf{
+    max-width: 400px;
+    color: rgb(201, 201, 201);
+    padding: 60px;
+    padding-top:0 ;
+}
+@media screen and (max-width: 700px){
+    footer{
+        width: 100%;
+        display: table;
+        justify-content: center;
+    }
+}

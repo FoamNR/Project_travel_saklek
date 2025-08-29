@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+.nav ul{
+    list-style: none;
+    background-color: rgb(228, 227, 227);
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    box-shadow: 2px 2px 4px 2px rgb(0 0 0 / 10%);
+}
+.nav li{
+    font-size: 1.5em;
+    font-family: 'Pridi', serif;
+    line-height: 40px;
+    text-align: left;
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(92, 91, 91);
+    display: block;
+    padding-left: 15px;
+    border-bottom: 1px solid #888;
+    transition: .3s;
+}
+.nav a:hover{
+    background-color: whitesmoke;
+    color: #000;
+}
+.nav a.active{
+    background-color: #aaa;
+    color: #444;
+    cursor: default;
+}
+.nav li li{
+    font-size: .8em;
+}
+
+/* Style menu for Larger screens */
+
+@media screen and (min-width: 700px){
+    .nav li{
+        width: 180px;
+        border-bottom: none;
+        height: 65px;
+        line-height: 65px;
+        font-size: 1.4em;
+        display: inline-block;
+        margin-right: -4px;
+    }
+    .nav a{
+        border-bottom: none;
+    }
+    .nav > ul > li{
+        text-align: center;
+    }
+    .nav > ul > li > a{
+        padding-left: 0;
+    }
+
+     /* Sum Menu */
+    .nav li ul{
+        position: absolute;
+        display: none;
+        width: inherit;
+    }
+    .nav li:hover ul{
+        display: block;
+    }
+    .nav li ul li{
+        display: block;
+    }
+}
+section{
+   width: 100%;
+}
+.box{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 130px;
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+}
+.box-1{
+    max-width: 430px;
+    padding: 20px;
+}
+.box-1 img{
+    max-width: 100%;
+    transition: 0.5s;
+}
+.box-1 img:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 2px 4px 2px rgb(0 0 0 / 30%);
+}
+.text-m a{
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    font-family: 'Trirong', serif;
+    transition: 0.5s;
+}
+.text-m a:hover{
+    color: #11a3a3;
+}
+.text-m p{
+    font-size: 1em;
+}
+hr.style1{
+	border-top: 1.3px solid #8c8b8b;
+}
+@media screen and (max-width: 700px){
+    .box{
+        display: table;
+    }
+    .box-1{
+        margin: 0 auto;
+    }
+}
+/*            Footer                 */
+footer{
+    max-width: 100%;
+    background: #222;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+    font-family: 'Prompt', serif;
+}
+.bgf{
+    max-width: 400px;
+    color: rgb(201, 201, 201);
+    padding: 60px;
+    padding-top:0 ;
+}
+@media screen and (max-width: 700px){
+    footer{
+        width: 100%;
+        display: table;
+        justify-content: center;
+    }
+}
